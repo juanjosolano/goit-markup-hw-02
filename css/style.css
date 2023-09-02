@@ -34,11 +34,34 @@ a:any-link {
 }
 ul {
   list-style: none;
-  margin: 0%;
+  list-style-type: disc;
+}
+li {
+  text-align: webki;
 }
 .container {
   width: 1200px;
 }
 .section-hero {
   background-color: #212121;
+}
+.container-section-footer {
+  background-color: var(--colortext);
+}
+.container-section-footer .icon {
+  color: var(--webstudio);
+  text-decoration: none;
+  front-size: 16px;
+  font-weight: 700;
+}
+.footer-direction {
+  color: var(--fondopagina);
+  text-decoration: none;
+  cursor: pointer;
+  text-decoration: underline;
+}
+.container-section-footer {
+  background-color: #212121;
+  text-decoration: none;
+  display: list-item;
 }

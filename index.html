@@ -6,10 +6,10 @@
   </head>
   <body>
     <header>
-      <nav class="navigation"></nav>
-      <a class="logo" href="index.html">WebStudio</a>
+      <nav class="navigation">
+        <a class="logo" href="index.html">WebStudio</a>
         <ul class="navegacion__list">
-          <li><a class="__link" href="#">Estudio</a></li>
+          <li><a class="navegacion__link" href="#">Estudio</a></li>
           <li>
             <a class="navegacion__link" href="portafolio.html">Portafolio</a>
           </li>
@@ -28,15 +28,15 @@
       </ul>
     </header>
     <main>
-      <section class="container section-hero">
+      <section class="section-hero">
         <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button type="button" id ="service">Solicite nuestro servicio</button>
+        <button type="button" id="service">Solicite nuestro servicio</button>
       </section>
       <section>
         <ul>
           <li>
-            <h2>ATENCIÓN A LOS DETALLES</h2>
-            <p>
+            <h2 class="about">ATENCIÓN A LOS DETALLES</h2>
+            <p class="about-us">
               Nos adentramos en todos los detalles y procesos de su negocio,
               para así desarrollar una solución a su medida.
             </p>
@@ -141,12 +141,16 @@
       </section>
     </main>
     <footer class="container-section-footer">
-      <a class="icon" href="index.html">WebStudio</a>
-      <address class="footer-direction" target="blank" >Calz. Ticomán 500, Ciudad de México, CDMX, México</address>
-      <ul>
-        <li class=""><a class="footer-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="footer-phone" href="tel:+525555296000">+52 55 5529 6000</a></li>
-      </ul>
+      <a class="logo" href="index.html">WebStudio</a>
+      <address>
+        <p class="footer-text">
+          Calz. Ticomán 500, Ciudad de México, CDMX, México
+        </p>
+        <ul class="footer-info">
+          <li class="footer-item">info@devstudio.com</li>
+          <li class="footer-item">+52 55 5529 6000</li>
+        </ul>
+      </address>
     </footer>
   </body>
 </html>

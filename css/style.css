@@ -1,137 +1,115 @@
-/* Importar fuentes desde Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 
-/* Define las variables de color */
 :root {
-  --fondopagina: #ffffff;
-  --webstudio: #2196f3;
-  --colortext: #212121;
-  --paragraph-color: rgba(117, 117, 117, 1); /* Corrección de sintaxis */
-  --background-banner: rgba(47, 48, 58, 1); /* Corrección de sintaxis */
+  --color-background: #e5e5e5;
+  --color-primary: #2196f3;
+  --color-secundary: #2f303a;
+  --color-text: #212121;
+  --color-text-contact: #757575;
 }
-
-/* Estilos generales para el cuerpo del documento */
 body {
   font-family: "Roboto", "Raleway", sans-serif;
+  background-color: #fff;
+  color: var(--color-text);
   font-size: 14px;
-  letter-spacing: 0.03em;
-}
-
-/* Estilos específicos para el elemento con ID "service" */
-#service {
-  background-color: var(--webstudio);
-}
-
-/* Estilos para los enlaces de navegación */
-.navegacion__link {
-  color: var(--colortext);
-}
-
-/* Estilos para la clase "logo" */
-.logo {
-  color: var(--webstudio);
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.17; /* Corrección de sintaxis */
-}
-
-/* Estilos para la clase "contact link" */
-.contact__link {
-  color: var(--paragraph-color);
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17; /* Corrección de sintaxis */
-}
-
-/* Estilos para la clase "section-hero" */
-.section-hero {
+  height: 2;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71; /* Corrección de sintaxis */
-  letter-spacing: 3%;
-  background-color: var(--background-banner);
 }
 
-/* Estilos para los encabezados h1 */
-h1 {
-  color: var(--fondopagina);
-}
-
-/* Estilos para los enlaces */
-.link {
+.logo {
+  font-family: "Raleway";
+  color: var(--color-primary);
   text-decoration: none;
+  font-weight: 700;
 }
-
-/* Estilos para todos los enlaces (incluso aquellos que no están dentro de un elemento "a") */
-a:any-link {
-  text-decoration: none;
-}
-
-/* Estilos para los enlaces cuando se pasa el cursor sobre ellos */
-a:hover {
-  color: var(--webstudio); /* Cambia el color al pasar el cursor */
-}
-
-/* Estilos para los enlaces cuando se enfocan con el teclado */
-a:focus {
-  outline: 2px solid var(--fondopagina); /* Agrega un contorno al enfocar */
-  color: var(--fondopagina);
-}
-
-/* Estilos para las listas no ordenadas (ul) */
-ul {
+li {
   list-style: none;
 }
-
-/* Estilos para los elementos de lista (li) */
-li {
-  text-align: left;
+.buttons-item .buttons-item-button {
+  font-size: 16px;
 }
-
-/* Establece el ancho máximo para el contenedor */
-.container {
-  max-width: 1200px;
-}
-
-/* Estilos para el contenedor dentro de la sección del pie de página */
-.container-section-footer {
-  background-color: var(--colortext); /* Cambio de color de fondo */
-}
-
-/* Estilos para los elementos con clase "icon" dentro de "container-section-footer" */
-.container-section-footer .icon {
-  color: var(--webstudio);
+.navigation-list-items-item {
+  color: var(--color-text);
   text-decoration: none;
-  font-size: 14px;
-  font-weight: 400;
-  letter-spacing: 0.42px;
 }
-
-/* Estilos para los elementos con clase "footer-direction" */
-.footer-direction {
-  color: var(--fondopagina);
-  text-decoration: underline;
+.navigation-list-items-item:hover,
+.navigation-list-items-item:focus {
+  color: var(--color-primary);
+}
+.dataright-item-email {
+  color: var(--color-text-contact);
+}
+.dataright-item-phone {
+  color: var(--color-text-contact);
+}
+.dataright-item-email:hover,
+.dataright-item-email:focus {
+  color: var(--color-primary);
+}
+.dataright-item-phone:hover,
+.dataright-item-phone:focus {
+  color: var(--color-primary);
+}
+.buttons-item-button {
   cursor: pointer;
+  color: var(--color-text);
+  border-radius: 10x;
+}
+.buttons-item-button:hover,
+.buttons-item-button:focus {
+  background-color: var(--color-primary);
+  transform: scale(1.1);
+  color: #fff;
+}
+.filter-portfolio {
+  visibility: hidden;
 }
 
-/* Estilos para los elementos de clase "footer-item" dentro de ".footer-info" */
-.footer-info .footer-item {
-  color: var(--paragraph-color);
-  font-size: 14px;
+.container {
+  background-color: var(--color-secundary);
+  width: auto;
+}
+
+.container h1 {
+  color: #fff;
+}
+.container .buttons-item-button-index {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+.image-description {
+  font-size: 18px;
+  font-weight: 700;
+  height: 2;
+}
+.text-description {
+  line-height: 1.875;
+  color: var(--color-text-contact);
+  font-size: 16px;
   font-weight: 400;
 }
-
-/* Estilos para el texto en el pie de página */
-.footer-text {
-  color: var(--fondopagina);
-  font-size: 14px;
-  font-weight: 400;
+.footer-container {
+  background-color: var(--color-text-contact);
+  text-decoration: none;
+  display: list-item;
+}
+.footer-container .icon {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-size: 26;
+  font-weight: 700;
 }
 
-/* Estilos adicionales para "container-section-footer" */
-/* No es necesario repetir el estilo de background aquí */
-.container-section-footer {
-  /* background-color: #212121; */
+.footer-direction {
+  color: #fff;
+  text-decoration: none;
+}
+.footer-mail {
+  color: var(--color-text-contact);
+  text-decoration: none;
+}
+.footer-phone {
+  color: var(--color-text-contact);
+  text-decoration: none;
 }

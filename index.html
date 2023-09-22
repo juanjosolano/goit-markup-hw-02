@@ -1,48 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
-    <title>WebStudio</title>
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Studio</title>
   </head>
   <body>
     <header>
       <nav class="navigation">
-        <a class="logo" href="index.html">WebStudio</a>
-        <ul class="navegacion__list">
-          <li><a class="navegacion__link" href="#">Estudio</a></li>
-          <li>
-            <a class="navegacion__link" href="portafolio.html">Portafolio</a>
+        <a class="logo">WebStudio</a>
+        <ul class="navigation-list">
+          <li class="navigation-list-items">
+            <a class="navigation-list-items-item" href="Index">Estudio</a>
           </li>
-          <li><a class="navegacion__link" href="#">Contactos</a></li>
+          <li class="navigation-list-items">
+            <a class="navigation-list-items-item" href="portafolio.html"
+              >Portafolio</a
+            >
+          </li>
+          <li class="navigation-list-items">
+            <a class="navigation-list-items-item" href="">Contactos</a>
+          </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a class="contact__link" href="mailto:info@devstudio.com"
+      <ul class="dataright">
+        <li class="dataright-item">
+          <a class="dataright-item-email" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li>
-          <a class="contact__link" href="tel:+525555296000">+52 55 5529 6000</a>
+        <li class="dataright-item">
+          <a class="dataright-item-phone" href="tel:+525555296000"
+            >+52 55 5529 6000</a
+          >
         </li>
       </ul>
     </header>
     <main>
-      <section class="section-hero">
+      <section class="container">
         <h1>SOLUCIONES EFICACES PARA SU NEGOCIO</h1>
-        <button type="button" id="service">Solicite nuestro servicio</button>
+        <button class="buttons-item-button-index" type="button">
+          Solicite nuestro servicio
+        </button>
       </section>
+
       <section>
         <ul>
           <li>
-            <h2 class="about">ATENCIÓN A LOS DETALLES</h2>
-            <p class="about-us">
+            <h3>ATENCIÓN A LOS DETALLES</h3>
+            <p>
               Nos adentramos en todos los detalles y procesos de su negocio,
               para así desarrollar una solución a su medida.
             </p>
           </li>
           <li>
-            <h2>PUNTUALIDAD</h2>
+            <h3>PUNTUALIDAD</h3>
             <p>
               Con nosotros, usted puede sentirse seguro y protegido. Un
               principio importante de la empresa: respetar su tiempo y respetar
@@ -50,14 +61,14 @@
             </p>
           </li>
           <li>
-            <h2>PLANIFICACIÓN</h2>
+            <h3>PLANIFICACIÓN</h3>
             <p>
               Usted podrá observar y participar en cada fase del desarrollo y
               aplicación de soluciones.
             </p>
           </li>
           <li>
-            <h2>TEGNOLOGÍA MODERNA</h2>
+            <h3>TEGNOLOGÍA MODERNA</h3>
             <p>
               Usamos herramientas innovadoras para resolver las tareas
               asignadas. Es hora de simplificar los procesos laborales.
@@ -65,14 +76,15 @@
           </li>
         </ul>
       </section>
+
       <section>
-        <h2>A qué nos dedicamos</h2>
         <ul>
+          <h2>A qué nos dedicamos</h2>
+
           <li>
             <img
               src="images/teclado.jpg"
               width="373"
-              height="323"
               alt="escribiendo en una laptop"
             />
           </li>
@@ -80,7 +92,6 @@
             <img
               src="images/pantalla.jpg"
               width="373"
-              height="323"
               alt="diseñando una interfaz movil"
             />
           </li>
@@ -88,67 +99,62 @@
             <img
               src="images/colores.jpg"
               width="373"
-              height="323"
               alt="mirando una paleta de colores"
             />
           </li>
         </ul>
       </section>
+
       <section>
-        <h2>Nuestro Equipo</h2>
         <ul>
+          <h2>Nuestro Equipo</h2>
           <li>
-            <img
-              src="images/tarjeta1.jpg"
-              height="260"
-              width="270"
-              alt="Foto de Andres"
-            />
+            <img src="images/tarjeta1.jpg" width="270" alt="Foto de Andres" />
             <h3>Andrés Cubo</h3>
             <p>Diseñador de Productos</p>
           </li>
           <li>
-            <img
-              src="images/tarjeta2.jpg"
-              height="260"
-              width="270"
-              alt="foto de Carla"
-            />
+            <img src="images/tarjeta2.jpg" width="270" alt="foto de Carla" />
             <h3>Carla Palacios</h3>
             <p>Desarrolladora Frontend</p>
           </li>
+
           <li>
-            <img
-              src="images/tarjeta3.jpg"
-              height="260"
-              width="270"
-              alt="foto de Mario"
-            />
+            <img src="images/tarjeta3.jpg" width="270" alt="foto de Mario" />
             <h3>Mario Dorado</h3>
             <p>Marketing</p>
           </li>
           <li>
-            <img
-              src="images/tarjeta4.jpg"
-              height="260"
-              width="270"
-              alt="foto de Pablo"
-            />
+            <img src="images/tarjeta4.jpg" width="270" alt="foto de Pablo" />
             <h3>Pablo Mijangos</h3>
             <p>Diseñador IU</p>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="container-section-footer">
-      <a class="logo" href="index.html">WebStudio</a>
-      <address>
-        <p class="footer-text">
-          Calz. Ticomán 500, Ciudad de México, CDMX, México
-        </p>
-        <ul class="footer-info">
-          <li class="footer-item">info@devstudio.com</li>
-          <li class="footer-item">+52 55 5529 6000</li>
+    <footer class="footer-container">
+      <a class="icon" href="">WebStudio</a>
+      <address class="">
+        <ul class="">
+          <li class="">
+            <a
+              class="footer-direction"
+              target="_blank"
+              href="https://www.google.com/maps/@19.5100715,-99.1326615,3a,75y,327.9h,90t/data=!3m6!1e1!3m4!1sdFQdzP6j5XSL3M-ligQvcw!2e0!7i16384!8i8192?entry=ttu"
+              rel="noopener noreferrer"
+              >Calz. Ticomán 500, Ciudad de México, CDMX, México</a
+            >
+          </li>
+          <li class="">
+            <a class="footer-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="">
+            <a class="footer-phone" href="tel:+525555296000"
+              >+52 55 5529 6000</a
+            >
+          </li>
         </ul>
       </address>
     </footer>
